@@ -1,28 +1,21 @@
 import React from 'react'
-import { Form,Button } from 'react-bootstrap';
+import "../styles/styles.css"
 
 export default function Contact() {
     return (
         <>
-           <h1>Sing Up our News Letter</h1>
+           <h1 style={{textAlign:"center"}}>Sing Up our News Letter</h1>
+           {/* <div> */}
+             <form action="">
+               <input type="text" name="" id="name"/>
+               <input type="email" name="" id="email"/>
+               <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+               <input type="submit" name="" id="submit"/>
 
-           <Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
+             </form>
+           {/* </div> */}
 
-
-  <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-</Form> 
+  
         </>
     )
 }

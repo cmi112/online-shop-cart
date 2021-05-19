@@ -42,11 +42,14 @@ li {
 a {
     text-decoration: none;
 }
-
+/* .fa-heart{
+    background-color: red;
+} */
 
 .mydiv {
     display: flex;
     justify-content: space-around;
+    border: 1px solid black;
     /* background-color: green; */
    
     
@@ -55,12 +58,46 @@ a {
     width: 200px;
 }
 img:hover {
-    transform: scale(-1);
+    transform: scale(2);
     border-radius: 50%;
 }
 
+/* contact page css */
+form{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 40px;
+  
 
-
+}
+input {
+    width: 200px;
+    margin: 0 auto;
+}
+/* About style */
+.about-sec{
+    margin: 0 auto;
+    background-color: green;
+}
+/* Cart style */
+.cart-div {
+    background-color: rgb(163, 196, 196);
+    box-shadow: 3px 4px 5px 3px rgb(174, 201, 174);
+}
+.cart-div button {
+    background-color: rgb(211, 47, 47);
+    color: white;
+    padding: 10px;
+   
+}
+.cart-div button:hover {
+    background-color: rgba(173, 216, 230, 0.166);
+    color: black;
+}
 footer{
     /* width: 100%;
     height: 50px;

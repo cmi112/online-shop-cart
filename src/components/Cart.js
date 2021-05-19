@@ -16,18 +16,30 @@ setTotal(sum)
     },[cart])
   
     return (
-        <div>
-           <h1>Welcome to your Cart </h1> 
+        <div >
+           <h1>Welcome to your Cart </h1>
+          
+             
         {cart.map((item)=>{
             return (<>
-                <h3>{item.name}</h3>
-                <h3>{item.price}</h3>
-                <button onClick={()=>dispatch({type:"deleteitem",payload:item})}>Delete</button>
+             <div className="cart-div" style={{display:"flex",flexDirection:"column",width:"250px",border:"1px solid",margin:"20px",padding:"10px"}}>
+                 <img src={item.img} alt=""/>
+                 <h3>{item.name}</h3>
+                 <p>{item.description}</p>
+                 <h3>$ {item.price}</h3>
+                
+
+                <button onClick={()=>dispatch({type:"deleteitem",payload:item})}><i class="fas fa-trash-alt"></i></button>
+                </div> 
                 </>
             )
         })}
-        <h2>Total: {total}</h2>
+        <div style={{border:"1px solid",padding:"20px",color:"blue"}}>
+        <h2>Total: $ {total}</h2>
+         </div>
+       
         </div>
+        
 
     )
 }

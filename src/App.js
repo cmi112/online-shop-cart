@@ -30,7 +30,7 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/cart"> &#x1F6D2; </Link>
+              <Link to="/cart"> <i class="fas fa-cart-arrow-down"></i> </Link>
               <span>{cart.length}</span>
             </li>
           </ul>
